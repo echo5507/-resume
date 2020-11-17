@@ -1,0 +1,244 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css 重製 */
+
+.wrap{
+    width: 1024px;
+    margin: auto;
+}
+
+.header{
+    background: #424242;
+    height: 300px;
+    position: relative;
+}
+
+.header img{
+    margin-left: 173px;
+    margin-top: 92px;
+}
+
+.cm{
+    background: rgba(255,255,255,0.18);
+    font-family: 微軟正黑體;
+    background: #424242;
+    position: absolute;
+    left: 387px;
+    top: 99px;
+    width: 234px;
+    height: 24px;
+    border-radius: 10px;
+    border: 2px solid #FFD366;
+    font-size: 24px;
+    padding: 8px 0px 8px 16px;
+    color: rgba(255,255,255,0.50);
+    outline:none;
+    font-weight: bold;
+
+}
+
+.kg{
+    background: rgba(255,255,255,0.18);
+    font-family: 微軟正黑體;
+    background: #424242;
+    position: absolute;
+    left: 387px;
+    top: 187px;
+    width: 234px;
+    height: 24px;
+    border-radius: 10px;
+    border: 2px solid #FFD366;
+    font-size: 24px;
+    padding: 8px 0px 8px 16px;
+    color: rgba(255,255,255,0.50);
+    outline:none;
+    font-weight: bold;
+}
+
+.cmfor{
+    position: absolute;
+    left: 387px;
+    top: 81px;
+    font-family: 微軟正黑體;
+    font-size: 18px;
+    color: #FFD366;
+    font-weight: bold;
+}
+
+.kgfor{
+    position: absolute;
+    left: 387px;
+    top: 165px;
+    font-family:微軟正黑體;
+    font-size: 18px;
+    color: #FFD366;
+    font-weight: bold;
+}
+
+.Calculation{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius:50%;
+    background: #FFD366;
+    border: none;
+    left: 690px;
+    top: 92px;
+    font-family:微軟正黑體;
+    font-size: 24px;
+    color: #424242;
+    font-weight: bold;
+    outline:none
+}
+
+.box{
+    display: none;
+}
+
+.result{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #424242;
+    border-radius:50%;
+    left: 690px;
+    top: 92px;
+    font-family:微軟正黑體;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.bmi{
+    font-family:arial;
+    position: absolute;
+    font-size: 14px;
+    left: 738px;
+    top: 174px;
+}
+
+.bmiresult{
+    position: absolute;
+    font-family: 微軟正黑體;
+    font-size: 32px;
+    left: 829px;
+    top: 137px;
+}
+
+.img{
+    position: absolute;
+    left: 610px;
+    top: 80px;
+    border-radius:50%;
+    padding:5px;
+    border: 3px solid #424242;
+}
+
+.content{
+    padding-top: 50px;
+    background:#f5f5f5;
+}
+
+
+.content p{
+    text-align: center;
+    font-family:微軟正黑體;
+    font-size: 24px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.content ul{
+    font-weight: bold;
+    margin-left: 150px;
+    margin-top: 50px;
+    width: 724px;
+    min-height:500px; 
+}
+
+.content ul li{
+    padding:21px 0px 21px 7px;
+    font-family:微軟正黑體;
+    font-size: 20px;
+    color: #424242; 
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.text{
+    padding-left: 60px;
+    font-family:微軟正黑體;
+    font-size: 12px;
+    color: #424242; 
+    
+}
+
+.content span{
+    padding-left: 20px;
+}
+
+.content ul li a{
+    font-family:微軟正黑體;
+    text-decoration: none;
+    padding-left: 15px;
+    color: #424242;
+}
+
+.Calculation:hover{
+    box-shadow: 0 1px 6px 3px rgba(255,195,49,0.64);
+}
+
+.content ul li a:hover{
+    font-weight: bold;
+}
+
+.footer{
+    background: #ffd166;
+    height: 90px;
+}
+
+.footer img{
+    margin-top: 17px;
+    margin-left: 484px;
+}

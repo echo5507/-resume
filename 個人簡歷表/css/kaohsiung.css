@@ -1,0 +1,312 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css 重製 */
+
+.wrap{
+    width: 1024px;
+    margin: auto;
+}
+
+.header{
+    background-image: url(../img/the-urban-landscape-1698285.png);
+    height: 380px;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.header h1{
+    font-family:微軟正黑體;
+     font-size: 40px;
+    color: #FFFFFF;
+    letter-spacing: 3.89px;
+    margin-left: 380.5px;
+    padding-top:89px;
+}
+
+.district{
+    background: rgba(255,255,255,0.70);
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+    width: 452px;
+    height: 48px;
+    margin-left: 293px;
+    margin-top: 96px;
+    outline:none;
+    font-family:微軟正黑體;
+    font-size: 18px;
+    color: #000000;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.district option{
+    font-weight: bold;
+    font-family:微軟正黑體;
+    font-size: 18px;
+    color: #000000;
+    line-height: 21px;
+}
+
+.hit{
+    position: absolute;
+    left: 112px;
+    top: 352px;
+    width: 800px;
+    height: 112px;
+    background: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+}
+
+.hit h3{
+    font-family:微軟正黑體;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    margin-left: 26px;
+    margin-top: 20px;
+}
+
+.hit ul{
+    float: left;
+    margin-left: 51px;
+    margin-top: 14px;
+}
+
+.hit ul li{
+    float: left;
+    width: 130px;
+    height: 42px;
+    margin-right: 23px;
+}
+
+.hit ul li a{
+    font-family:微軟正黑體;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    padding :11px 34px 11px 34px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.color{
+    font-family:微軟正黑體;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    padding :11px 34px 11px 34px;
+    text-decoration: none;
+    color: #fff;
+    background: #8A82CC;
+    border-radius: 5px;
+}
+
+.color2{
+    background: #FFA782;
+    border-radius: 5px;
+}
+
+.color3{
+    background: #F5D105;
+    border-radius: 5px;
+}
+
+.color4{
+    background: #559AC8;
+    border-radius: 5px;
+}
+
+.clear{
+    clear: both;
+}
+
+.line{
+    margin-top: 132px;
+    border-bottom: dashed #559AC8;
+    height: 1px;
+    width: 900px;
+    margin-left: 62px;
+    position: relative;
+}
+
+.line img{
+    position: absolute;
+    left: 440px;
+    top: 123px;
+    border-radius: 50%;
+    padding:5px;
+    border: 2px solid #559AC8;
+}
+
+
+
+.content h2{
+    font-family:微軟正黑體;
+    font-weight: bold;
+    font-size: 36px;
+    color: #8A82CC;
+    margin-left: 457.5px;
+    margin-top:80px;
+}
+
+.content >ul{
+    margin-top: 24px;
+    margin-left: 40.5px;
+    margin-bottom: 200px;
+    min-height: 200px;
+}
+
+.content >ul> li{
+    float: left;
+    width: 464px;
+    height: 273px;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    margin-right: 15px;
+    margin-bottom: 36px;
+    position: relative;
+}
+
+
+.contentnext{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contentnext a{
+    font-family:微軟正黑體;
+    font-size: 14px;
+    color: rgba(73,73,73,0.50);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+
+
+
+
+
+
+
+
+.name{
+    position: absolute;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family:微軟正黑體;
+    font-weight: bold;
+    left: 22px;
+    top: 117px;
+}
+
+.region{
+    position: absolute;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family:微軟正黑體;
+    font-weight: bold;
+    left: 391px;
+    top: 125px;
+}
+
+.text{
+    position: absolute;
+    top: 155px;
+    left: 23px;
+    font-size: 16px;
+    color: #000000;
+    font-family:微軟正黑體;
+    font-weight: bold;
+    height: 118px;
+}
+
+
+
+
+.text li{
+    margin-top: 10px;
+    margin-left : 36px; text-indent : -26px
+}
+
+.text li span{
+    padding-left: 179px;
+}
+
+
+
+
+
+
+.footer{
+    margin-top: 100px;
+    height: 90px;
+    background: #559AC8;
+}
+
+.footer h4{
+    font-family:微軟正黑體;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-top: 24px;
+    margin-left: 477px;
+    padding-bottom: 15px;
+}
+
+.footer p{
+    font-size: 14px;
+    color: #FFD366;
+    font-family:微軟正黑體;
+    padding-left: 440px;
+}
+
+.top{
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+}

@@ -1,0 +1,275 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	
+}
+
+/* css重製 */
+
+.wrap{
+	font-family: 微軟正黑體;
+  width: 1280px;
+	margin: auto;
+	height: 2000px;
+}
+
+.parallax-window {
+    min-height:400px;
+    background: transparent;
+}
+
+.wrap h1{
+	font-weight: bold;
+	font-size: 50px;
+	padding-top: 100px;
+	text-align: center;
+	text-shadow: 0px 0px 20px #F0F0F0;
+}
+
+.countytext{
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	font-size: 32px;
+	width: 300px;
+	height: 50px;
+	margin: 100px 0px 0px 310px;
+	border-radius: 10px; 
+	outline: none;
+	opacity: 0.7;
+}
+
+.regiontext{
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	font-size: 32px;
+	width: 300px;
+	height: 50px;
+	margin: 100px 0px 0px 50px;
+	border-radius: 10px; 
+	outline: none;
+	opacity: 0.7;
+}
+
+.wrap h2{
+	font-weight: bold;
+	font-size: 30px;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.card-columns{
+	max-height: 400px;
+}
+
+.clear{
+	clear: both;
+}
+
+.card {
+	background: linear-gradient(to right, #434343 0%, black 100%);
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 320px;
+	box-shadow: 2px 2px 5px gray;
+	float: left;
+	position: relative;
+	color: #F0F0F0;
+}
+
+.card-header{
+	padding-top: 20px;
+	text-align: center;
+}
+
+.card-header span{
+	display: block;
+	font-weight: bold;
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+
+.card-header p{
+	font-weight: bold;
+}
+
+.aqi{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.aqistatus{
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+}
+
+.pm25{
+	padding-top: 20px;
+	padding-left: 75px;
+}
+
+.pm25style{
+	padding-right: 80px;
+}
+
+.pm25style sub{
+	vertical-align:sub;
+}
+
+.bar{
+	display: block;
+    width: 150px;
+    height: 4px;
+    background-color: #505A66;
+    margin: 15px 0 5px 75px;
+    /* position: relative; */
+}
+
+.bar-active{
+	display: block;
+    /* width: 50%; */
+    height: 4px;
+    background-color: #FF3333;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+
+.card-footer{
+	padding-top: 10px;
+	padding-left: 75px;
+}
+
+
+
+.card-header i{
+	font-size: 30px;
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	color: #FFFF;
+	transition: .3s;
+}
+
+.card-header i:hover {
+	font-size: 35px;
+	color: #FFFF00;
+}
+
+.attention i{
+	color: #FFFF00;
+}
+
+.top{
+	color: #000;
+	font-size: 50px;
+	bottom: 50px;
+	right: 150px;
+	position: fixed;
+	transition: .3s;
+	text-shadow: 2px 2px 10px gray;
+}
+
+.top:hover{
+	font-size: 55px;
+} 
+
+.text-muted i{
+	padding-right: 5px;
+}
+
+.footer{
+	text-align: center;
+	color: #F0F0F0;
+	height: 100px;
+	background: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.footer span{
+	display: block;
+	padding-top: 40px;
+}
+
+
+
+.Pagination a{
+	color: #000;
+	text-decoration: none;
+
+}
+
+.Pagination ul{
+	margin-bottom: 20px;
+	margin-left: 640px;
+	float: left;
+}
+
+.Pagination li{
+	font-weight: bold;
+	float: left;
+	margin-right: 10px;
+}
+
+.status-aqi2 {
+color:orange;
+  }
+  .status-aqi3 {
+	color: #ff7e00;
+  }
+  .status-aqi4 {
+	color: #ff0000;
+  }
+  .status-aqi5 {
+	color: #8f3f97;
+  }
+  .status-aqi6 {
+	color: #7e0023;
+  }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="zh-tw">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>空氣質量指數監測</title>
+    <link rel="shortcut icon" href="https://upload.cc/i1/2019/02/08/KyWlkP.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/aqi.css">
+</head>
+<body>
+<div class="wrap" >
+    <div  id="app">
+                <div class="parallax-window" data-parallax="scroll" data-image-src="https://upload.cc/i1/2019/02/07/ULWOuM.jpg">
+            <h1>空氣質量指數監測</h1>
+            <select name="" id="" class="countytext" v-model='filter'>
+            <option value="" disabled>--- 請選擇城市 ---</option>
+            <option value="全部縣市">全部縣市</option>
+            <option v-bind:value='item' v-for='item in location' >{{item}}</option>
+            </select>
+                        <select name="" id="" class="regiontext" v-model='area'>
+                        <option value="" disabled>--- 請選擇區域 ---</option>
+                        <option value="全部區域" >全部區域</option>
+                        <option v-bind:value='item' v-for='item in box'  >{{item}}</option>   
+                        </select>
+                </div>
+    <h2>關注城市</h2>
+    <div class="card-columns">
+    <countycomponent v-for="item in stared" :aqielement="item" :key="item.SiteName" v-on:removestarmark="removeStar(item)"  :isstar=true ></countycomponent>
+    </div>
+    <div class="clear"></div>
+<hr>
+    <div class="card-columns">
+    <countycomponent v-for="item in data" v-if="item.County == filter   &&  area ==='全部區域' || filter=='全部縣市' "  :aqielement="item" :key="item.SiteName"  v-on:addstarmark="addStar(item)" ></countycomponent>
+    <countycomponent v-for="item in filterArray" v-if=" item.SiteName == area " :aqielement="item" :key="item.Longitude" v-on:addstarmark="addStar(item)" ></countycomponent>
+    </div>
+    <div class="clear"></div>
+    </div>
+
+ <!-- <div class="card"> 
+    <div class="card-header" ><span>台東 - 關山</span>
+                <a href="#" class="float-right" ><i class="far fa-star" ></i></a>
+                <a href="#" class="float-right" ><i class="fas fa-star" ></i></a>
+                <p>空氣質量指數（AQI）</p>
+    </div>
+        <div class="card-body">
+            <div class="aqi">81</div>
+            <div class="aqistatus">普通</div> 
+            <div class="pm25"><span class="pm25style">PM<sub>2.5</sub></span><span>30</span></div> 
+            <div class="bar"><div class="bar-active" :style="{width:item['PM2.5']+ '%'}"></div></div>
+            
+        </div>
+        <div class="card-footer">
+                <small class="text-muted">2019-02-07 12:00</small>
+            </div>
+</div> 
+ -->
+
+
+
+ <!-- <div class="Pagination">
+    <ul>
+    <li v-for="page in filter.length"><a href="#" @click.prevent="currentPage=page-1">{{page}}</a></li>
+</ul>
+</div> 
+<div class="clear"></div> --> 
+
+        <a href="#"class='top' ><i class="fas fa-arrow-alt-circle-up"></i></a>
+        <div class="footer"><span>資料來源 http://opendata2.epa.gov.tw/</span></div>
+
+</div>
+</div>
+
+
+
+
+
+<script type="text/x-template" id="countycomponent">
+    <div class="card">
+            <div class="card-header" ><span>{{aqielement.County}} - {{aqielement.SiteName}}</span>
+                        <a href="#" class="float-right"  v-on:click.prevent="addStar"  v-if="!isstar"  ><i class="far fa-star"  ></i></a>
+                        <a href="#" class="attention"  v-on:click.prevent="removeStar" v-if="isstar"><i class="fas fa-star"  ></i></a>
+                        <p>空氣質量指數（AQI）</p>
+            </div>
+                <div class="card-body">
+                    <div class="aqi" v-bind:class="status">{{aqielement.AQI}}</div>
+                    <div class="aqistatus"v-bind:class="status">{{aqielement.Status}}</div> 
+                    <div class="pm25"><span class="pm25style">PM<sub>2.5</sub></span><span>{{aqielement['PM2.5']}}</span></div>
+                    <div class="bar"><div class="bar-active" :style="{width:aqielement['PM2.5']+ '%'}"></div></div> 
+                </div>
+                <div class="card-footer">
+                        <small class="text-muted"><i class="far fa-clock"></i>{{aqielement.PublishTime}}</small>
+                    </div>
+        </div>
+</script>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+<script src="js/aqi.js"></script>
+
+</body>
+</html>
